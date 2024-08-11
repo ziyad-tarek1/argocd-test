@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: piano-deployment
 spec:
   replicas: 2  # Adjust the number of replicas as needed
   selector:
     matchLabels:
-      app: nginx
+      app: piano
   template:
     metadata:
       labels:
-        app: nginx
+        app: piano
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: piano
+        image: ziyadtarek99/piano-project:latest
         ports:
         - containerPort: 80

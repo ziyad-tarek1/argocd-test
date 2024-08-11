@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-service
+  name: piano-service
 spec:
   selector:
-    app: nginx
+    app: piano
   type: NodePort  # Choose NodePort for external access
   ports:
   - protocol: TCP
