@@ -15,6 +15,7 @@ spec:
     spec:
       containers:
       - name: piano
-        image: ziyadtarek99/piano-project:latest
+        image: ziyadtarek99/piano-project:1.0
+        #imagePullPolicy: Always
         ports:
         - containerPort: 80
